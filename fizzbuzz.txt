@@ -1,0 +1,29 @@
+import java.util.*;
+
+public class Snippet {
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+		int tesCases = scanner.nextInt();
+		scanner.nextLine();
+		String num = scanner.nextLine();
+		String[] nums = num.split(" ");
+		 int num1 = Integer.parseInt(nums[0]);
+		 int num2 = Integer.parseInt(nums[1]);
+		 Snippet.fizzBuzz(num1);
+		 Snippet.fizzBuzz(num2);
+	}
+
+	public static void fizzBuzz(int num) {
+		for (int i = 1; i <= num; i++) {
+			if (i % 3 == 0) {
+				System.out.println("Fizz");
+			} else if (i % 5 == 0) {
+				System.out.println("Buzz");
+			} else {
+				System.out.println(i);
+			}
+		}
+	}
+
+}
